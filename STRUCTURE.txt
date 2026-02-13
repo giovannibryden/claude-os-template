@@ -1,0 +1,54 @@
+claude-os-template/
+├── .gitignore
+├── .setup/
+│   ├── google-calendar-mcp-setup.md
+│   ├── notion-mcp-setup.md
+│   └── slack-mcp-setup.md
+├── CHANGELOG.md
+├── CLAUDE.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── MAINTENANCE.md
+├── NEXT-STEPS-FOR-TEMPLATE-OWNER.md
+├── PITCH.md
+├── README.md
+├── SETUP.md
+├── SETUP.sh
+├── START-HERE.md
+├── WORKFLOWS.md
+├── communications/
+│   ├── drafts/
+│   ├── sent/
+│   └── templates/
+│       ├── feedback-request.md
+│       ├── new-hire-announcement.md
+│       └── team-update.md
+├── deals/
+│   ├── active/
+│   ├── pipeline/
+│   └── deal-template.md
+├── hiring/
+│   ├── candidates/
+│   │   └── template.md
+│   └── open-roles/
+├── inbox/
+│   └── README.md
+├── meetings/
+│   ├── transcripts/
+│   └── action-items.md
+├── personal/
+│   ├── development/
+│   ├── priorities.md (created by SETUP.sh)
+│   └── reflection.md (user creates)
+├── strategy/
+│   ├── quarterly/
+│   ├── annual/
+│   └── decision-log.md
+└── team/
+    ├── 1-1s/
+    │   └── template.md
+    ├── performance/
+    ├── org-chart.md (created by SETUP.sh)
+    └── team-themes.md
+
+Total: 22 markdown files, 71 directories (including empty ones)
