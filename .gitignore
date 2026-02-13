@@ -1,0 +1,7 @@
+.DS_Store
+.processed/
+*.pdf
+credentials.json
+*credentials*.json
+client_secret*.json
+tokens.json
