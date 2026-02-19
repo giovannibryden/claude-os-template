@@ -46,12 +46,23 @@ Where you process synchronous information.
 - **transcripts/**: Meeting recordings or transcripts. Name by date and topic.
 - **action-items.md**: Centralized list of follow-ups from meetings that need tracking.
 
+### `/growth-cycle-reviews`
+Performance review archive. When you provide performance review PDFs (Growth Cycle reviews, annual reviews, etc.), Claude will process them using the workflow defined in `personal/growth-cycle-review-prep-workflow.md`:
+
+- Extracts and converts each PDF to structured markdown
+- Organizes by person and review period (e.g., `Jane_Doe/H2_FY26_growth_cycle_review.md`)
+- Preserves all original text faithfully with YAML metadata (ratings, period, conversion date)
+- Outputs a summary table showing all ratings and files
+
+To use: drop review PDFs into `inbox/` and say "process inbox and prep growth cycle reviews."
+
 ### `/personal`
 Your own development as a leader.
 
 - **development/**: Books, articles, notes on leadership, courses you're taking.
 - **priorities.md**: What you're focusing on right now. Update this weekly.
 - **reflection.md**: Space for thinking about your own performance, lessons learned, what you want to improve.
+- **workflows/**: Claude workflow definitions that automate recurring tasks (e.g., meeting prep, review processing). These are instructions Claude follows when triggered by specific commands.
 
 ### `/inbox`
 Your dumping ground.
@@ -122,7 +133,7 @@ The system serves you, not the other way around. If something isn't working, cha
 This system should be backed up to a private GitHub repository.
 
 **Recommended git workflow:**
-- Commit at logical milestones (after processing inbox, updating strategy docs, etc.)
+- Commit at logical milestones (after processing inbox, updating strategy docs, processing performance reviews, etc.)
 - Use clear commit messages describing what changed
 - Push regularly to back up your work
 

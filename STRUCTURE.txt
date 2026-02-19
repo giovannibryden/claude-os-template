@@ -31,6 +31,8 @@ claude-os-template/
 │   ├── candidates/
 │   │   └── template.md
 │   └── open-roles/
+├── growth-cycle-reviews/
+│   └── (created automatically when processing review PDFs)
 ├── inbox/
 │   └── README.md
 ├── meetings/
@@ -38,6 +40,8 @@ claude-os-template/
 │   └── action-items.md
 ├── personal/
 │   ├── development/
+│   ├── workflows/
+│   │   └── growth-cycle-review-prep-workflow.md
 │   ├── priorities.md (created by SETUP.sh)
 │   └── reflection.md (user creates)
 ├── strategy/

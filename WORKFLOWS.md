@@ -210,6 +210,51 @@ Claude:
 ### After a call
 Drop notes in inbox, Claude updates the deal file automatically.
 
+## The "Performance Review Processing" Workflow
+
+Convert performance review PDFs into structured, searchable markdown.
+
+### When to use it
+- At the start of a review cycle, to have past reviews on hand
+- When you inherit a new team and receive historical reviews
+- After reviews are finalized, to archive them in a structured format
+
+### How it works
+1. Drop performance review PDFs into `inbox/`
+2. Tell Claude: "process inbox and prep growth cycle reviews"
+3. Claude will:
+   - Read each PDF and identify the direct report and review period
+   - Extract self-assessment and manager ratings
+   - Convert the full content to markdown with YAML metadata
+   - Save to `growth-cycle-reviews/[Name]/[Period]_growth_cycle_review.md`
+   - Output a summary table with all ratings
+
+### Output format
+Each review is saved as a markdown file with:
+```yaml
+---
+Direct Report: Jane Doe
+Review Period: H2 FY26
+Self-Assessment Rating: Exceeding Expectations
+Manager Rating: Meeting Expectations
+Converted: 2026-02-19
+---
+```
+Followed by the full review content under `## Self-Review` and `## Manager Review` headers.
+
+### After processing
+```
+You: "Who is missing an H1 FY26 growth cycle review?"
+
+Claude:
+- Cross-references processed reviews against your org chart
+- Identifies gaps by person and period
+- Flags any reviews with missing ratings or incomplete content
+```
+
+### Pro tip
+The detailed workflow definition lives in `personal/growth-cycle-review-prep-workflow.md`. You can customize the output format, metadata fields, and directory structure there.
+
 ## Integration Workflows
 
 ### Notion Integration
