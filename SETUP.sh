@@ -28,7 +28,7 @@ echo ""
 read -p "Your full name: " USER_NAME
 read -p "Your role/title (e.g., Head of Solutions Engineering): " USER_ROLE
 read -p "Your team name (e.g., Solutions Engineering): " TEAM_NAME
-read -p "Your organization name (e.g., Mixpanel): " ORG_NAME
+read -p "Your organization name (e.g., Acme Corp): " ORG_NAME
 
 echo ""
 echo "Git repository (optional - press Enter to skip):"

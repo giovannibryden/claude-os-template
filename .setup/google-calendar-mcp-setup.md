@@ -23,7 +23,7 @@
 1. Go to "APIs & Services" → "Credentials"
 2. Click "Create Credentials" → "OAuth client ID"
 3. If prompted, configure OAuth consent screen first:
-   - User Type: Internal (if Mixpanel workspace) or External
+   - User Type: Internal (if company workspace) or External
    - Add your email as test user
    - Scopes: Add `https://www.googleapis.com/auth/calendar`
 4. Application type: **Desktop app**

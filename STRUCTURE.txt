@@ -1,4 +1,4 @@
-claude-os-template/
+claude-os/
 ├── .gitignore
 ├── .setup/
 │   ├── google-calendar-mcp-setup.md
@@ -9,7 +9,6 @@ claude-os-template/
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── MAINTENANCE.md
-├── NEXT-STEPS-FOR-TEMPLATE-OWNER.md
 ├── PITCH.md
 ├── README.md
 ├── SETUP.md
@@ -19,6 +18,7 @@ claude-os-template/
 ├── communications/
 │   ├── drafts/
 │   ├── sent/
+│   ├── writing-style-guide.md
 │   └── templates/
 │       ├── feedback-request.md
 │       ├── new-hire-announcement.md
@@ -41,7 +41,12 @@ claude-os-template/
 ├── personal/
 │   ├── development/
 │   ├── workflows/
-│   │   └── growth-cycle-review-prep-workflow.md
+│   │   ├── growth-cycle-review-prep-workflow.md
+│   │   ├── meeting-prep-workflow.md
+│   │   ├── process-week-workflow.md
+│   │   ├── update-briefs-workflow.md
+│   │   └── weekly-prep-workflow.md
+│   ├── workflows-index.md
 │   ├── priorities.md (created by SETUP.sh)
 │   └── reflection.md (user creates)
 ├── strategy/
@@ -51,8 +56,9 @@ claude-os-template/
 └── team/
     ├── 1-1s/
     │   └── template.md
+    ├── briefs/
+    │   └── template.md
     ├── performance/
-    ├── org-chart.md (created by SETUP.sh)
+    ├── milestones.md
+    ├── team-structure.md
     └── team-themes.md
-
-Total: 22 markdown files, 71 directories (including empty ones)

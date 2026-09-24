@@ -25,11 +25,37 @@ chmod +x SETUP.sh
 
 ## What You Get
 
-- **Before 1:1s:** Claude preps you with recent notes, open items, and themes
-- **After meetings:** Claude files notes and extracts action items automatically
+- **Before 1:1s:** Claude preps you with person briefs, open items, and themes - development first, pipeline last
+- **After meetings:** Claude files notes, extracts action items, and updates person briefs automatically
+- **Weekly:** "Process this week" batch-files all meetings; "Prep for next week" creates all agendas with a decision gate
 - **When hiring:** Claude evaluates candidates against your rubric
 - **For decisions:** Claude synthesizes context from across all your documents
-- **For communication:** Claude drafts in your voice using your context
+- **For communication:** Claude drafts in your voice using your writing style guide
+
+## The Workflow System
+
+Workflows chain together and share files as handoffs:
+
+```
+Process Week -> writes 1:1 files -> triggers Update Briefs -> refreshes briefs
+Weekly Prep -> reads briefs -> runs Meeting Prep -> creates agendas
+```
+
+The **person brief** (`team/briefs/[name].md`) is the central node - it synthesizes 1:1 notes, performance records, themes, and action items into one file per person. Meeting prep reads the brief instead of re-scanning 6+ files.
+
+## System Structure
+
+```
+claude-os/
+├── team/           # Your people (1:1s, briefs, performance, themes, milestones)
+├── hiring/         # Candidates and open roles
+├── deals/          # Active opportunities
+├── strategy/       # Long-term plans and decisions
+├── meetings/       # Transcripts and action items
+├── communications/ # Drafts, sent messages, templates, writing style guide
+├── personal/       # Your priorities, workflows, and development
+└── inbox/          # Drop anything here for processing
+```
 
 ## Documentation
 
@@ -38,20 +64,6 @@ chmod +x SETUP.sh
 - **[START-HERE.md](START-HERE.md)** - Getting started guide
 - **[CLAUDE.md](CLAUDE.md)** - System structure and philosophy
 - **[WORKFLOWS.md](WORKFLOWS.md)** - Advanced usage patterns
-
-## System Structure
-
-```
-claude-os/
-├── team/           # Your people (1:1s, performance, themes)
-├── hiring/         # Candidates and open roles
-├── deals/          # Active opportunities
-├── strategy/       # Long-term plans and decisions
-├── meetings/       # Transcripts and action items
-├── communications/ # Drafts, sent messages, templates
-├── personal/       # Your own development and priorities
-└── inbox/          # Drop anything here for processing
-```
 
 ## Time Investment
 
@@ -78,16 +90,10 @@ This system contains sensitive information. Keep it private:
 
 ## Contributing
 
-This is a blessed template maintained for reusability. If you develop useful patterns or improvements:
+If you develop useful patterns or improvements:
 1. Document them in your own repo
 2. Open an issue or PR to suggest additions to the template
 3. Share workflows in [WORKFLOWS.md](WORKFLOWS.md)
-
-## Support
-
-- Read the documentation in this repo
-- Ask Claude - it's designed to help you use this system
-- Open an issue for bugs or feature requests
 
 ## License
 

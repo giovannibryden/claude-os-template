@@ -6,7 +6,7 @@ You now have a blessed template ready to share. Here's what to do next.
 
 ### Option A: GitHub CLI (Recommended)
 ```bash
-cd /Users/giobryden/claude-os-template
+cd ~/claude-os-template
 gh repo create claude-os-template --public --source=. --remote=origin
 git push -u origin main
 ```
@@ -20,7 +20,7 @@ git push -u origin main
 6. Create repository
 7. Back in terminal:
 ```bash
-cd /Users/giobryden/claude-os-template
+cd ~/claude-os-template
 git remote add origin git@github.com:YOUR-USERNAME/claude-os-template.git
 git push -u origin main
 ```
@@ -93,7 +93,7 @@ jobs:
 
 ## 3. Announce It
 
-### Internal (Your Team at Mixpanel)
+### Internal (Your Team)
 Draft a message:
 
 ---

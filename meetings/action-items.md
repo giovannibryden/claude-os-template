@@ -1,23 +1,42 @@
 # Action Items
 
-Central tracking for follow-ups from meetings and conversations.
+Central tracking for follow-ups from meetings. Strategic items only - tactical follow-ups stay in 1:1 files.
 
-## This Week (Must-Do)
+Last pruned: [date]
 
-- [ ] [Action] - [Owner] - [Due date] - [Source: where this came from]
+---
 
-## Next Week
+## Open Items by Person
 
-- [ ] [Action] - [Owner] - [Due date] - [Source]
+### You
 
-## This Month
+- [ ] [Action] - [Source: meeting date]
 
-- [ ] [Action] - [Owner] - [Due date] - [Source]
+### [Direct Report 1]
 
-## Blocked
+- [ ] [Action] - [Source]
 
-- [ ] [Action] - [Owner] - [Blocked by what] - [Source]
+### [Direct Report 2]
 
-## Done
+- [ ] [Action] - [Source]
 
-- [x] [Action] - [Completed date]
+## Account/Deal Watch
+
+- [ ] [Deal name] - [Status] - [Source]
+
+## Examine Later
+
+- [ ] [Item] - [Source]
+
+---
+
+### Added [date]
+
+**You**
+- [item] - [source]
+
+**Direct Reports**
+- [Name]: [item] - [source]
+
+**Watch**
+- [item] - [source]

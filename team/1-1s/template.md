@@ -1,37 +1,17 @@
-# 1:1 with [Name] - [Date]
+# [Name] 1:1 - [Date]
 
-## Agenda
+## Key Topics
+- [topic 1]
+- [topic 2]
 
-### From [Your Name]
--
--
--
+## What They Said
+[Key content from their side of the conversation - verbatim where possible]
 
-### From [Their Name]
--
--
-
-## Discussion Notes
-
-### [Topic 1]
-
-
-### [Topic 2]
-
-
-### [Topic 3]
-
+## Decisions / Outcomes
+- [decision or conclusion reached]
 
 ## Action Items
+- [ ] [Owner] to [specific action] by [date]
 
-- [ ] [Action item] - [Owner] - [Due date]
-- [ ] [Action item] - [Owner] - [Due date]
-
-## Follow-ups for Next Time
-
--
--
-
-## Observations/Themes
-
-[Anything you noticed about their mood, energy, growth, concerns, etc.]
+## Context for Next 1:1
+[Open threads, things to follow up on, tone/energy observations]

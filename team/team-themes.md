@@ -1,72 +1,22 @@
-# Team Themes
+# Team Themes & Patterns
 
-Running log of patterns across the team. Updated as themes emerge from 1:1s, team meetings, and observations.
+Running log of what you're seeing across the team. Update as patterns emerge.
 
-## Current Themes (Active)
-
-### [Theme Name] - First noticed: [Date]
-
-**Who mentioned it:**
-- [Name] - [Date] - [Context]
-- [Name] - [Date] - [Context]
-
-**Pattern:**
-[What you're seeing]
-
-**Impact:**
-[How this is affecting the team]
-
-**Action taken:**
-- [What you did / plan to do]
-
-**Status:** [Active / Resolved / Monitoring]
+## Current Themes
 
 ---
 
-### [Theme Name] - First noticed: [Date]
-
-**Who mentioned it:**
-- [Name] - [Date] - [Context]
-
-**Pattern:**
-[What you're seeing]
-
-**Impact:**
-[How this is affecting the team]
-
-**Action taken:**
-- [What you did / plan to do]
-
-**Status:** [Active / Resolved / Monitoring]
+### [Theme Name]
+- **First noticed:** [date]
+- **Updated:** [date] - [what changed]
+- **What you're seeing:** [The pattern - not events, but the trend underneath]
+- **What you're doing:** [Actions taken or planned]
+- **Status:** [Active / Monitoring / Resolved]
 
 ---
 
-## Past Themes (Resolved)
+## Resolved Themes
 
-### [Theme Name] - [Start date] → [End date]
-
-**What it was:**
-[Description]
-
-**How it was resolved:**
-[Actions taken and outcome]
-
-**Lessons learned:**
-[What you'd do differently next time]
-
----
-
-## Theme Categories
-
-Use these to tag themes for easier tracking:
-
-- **Morale** - Team happiness, energy, engagement
-- **Skills** - Technical gaps, training needs
-- **Process** - Workflow issues, blockers, inefficiencies
-- **Communication** - Collaboration problems, information gaps
-- **Workload** - Burnout, capacity issues, distribution
-- **Career** - Growth, promotions, development opportunities
-- **Culture** - Team dynamics, values alignment, inclusion
-- **Tools** - Technology problems, needs, requests
-- **Leadership** - Management feedback, direction concerns
-- **External** - Company-wide issues affecting the team
+### [Theme Name] - [Start date] to [End date]
+- **What it was:** [Description]
+- **How it resolved:** [What happened]

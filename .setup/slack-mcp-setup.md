@@ -23,7 +23,7 @@ Request approval from IT team to create a Slack app with these scopes:
 1. Go to https://api.slack.com/apps
 2. Click "Create New App" → "From scratch"
 3. Name it: "Claude Assistant" (or similar)
-4. Select workspace: Mixpanel workspace
+4. Select workspace: Your company workspace
 
 ### 3. Configure Permissions
 
