@@ -1,0 +1,5 @@
+config.json
+gong_credentials.json
+transcripts/
+coaching-records/
+__pycache__/

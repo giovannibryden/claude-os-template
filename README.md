@@ -31,6 +31,7 @@ chmod +x SETUP.sh
 - **When hiring:** Claude evaluates candidates against your rubric
 - **For decisions:** Claude synthesizes context from across all your documents
 - **For communication:** Claude drafts in your voice using your writing style guide
+- **For demo coaching:** Claude pulls a demo from Gong, scores it against a four-criterion scorecard, and writes coaching feedback plus Gong annotations. Standalone skill in `skills/demo-coaching/` (see its README to install)
 
 ## The Workflow System
 

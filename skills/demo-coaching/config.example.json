@@ -1,0 +1,15 @@
+{
+  "team": {
+    "Jane Doe": "jane.doe@yourcompany.com",
+    "Sam Lee": "sam.lee@yourcompany.com"
+  },
+  "levels": {
+    "Jane Doe": "IC3",
+    "Sam Lee": "IC2"
+  },
+  "transcripts_dir": "transcripts",
+  "coaching_dir": "coaching-records",
+  "one_on_one_pages": {
+    "Jane Doe": "https://www.notion.so/your-workspace/jane-1-1-page-id"
+  }
+}
