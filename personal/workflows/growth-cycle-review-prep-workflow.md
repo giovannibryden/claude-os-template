@@ -87,13 +87,27 @@ growth-cycle-reviews/
 
 ---
 
+## Step 4b: Time-Frame Check (run three times before Step 5)
+
+A review covers the **two fiscal quarters up to the review date**. Use your company's fiscal calendar (example: Q1=Feb-Apr, Q2=May-Jul, Q3=Aug-Oct, Q4=Nov-Jan, FY named for the year it ends, so an October 2026 review covers Q2-Q3 FY27, May 1 - Oct 31, 2026).
+
+For each saved file, compute the window from the review date, then check:
+
+1. **Label:** the `Review Period` matches the window. A self-review filed in the previous cycle stays a previous-cycle file, even if its manager review is still pending.
+2. **Dates in the text:** every dated event, project, award, deal, and number in the self-review and manager review falls inside the window. List any that don't.
+3. **Re-read cold:** read the file again top to bottom with only the window in mind and confirm passes 1 and 2.
+
+Flag anything out of window in the Step 5 summary under a "Time frame" column (`OK` or the out-of-window items). Never edit review wording to fix it. Flag it for the manager. Anything written later from these files treats out-of-window material as prior-cycle context only, never as this cycle's evidence.
+
+---
+
 ## Step 5: Confirm & Summarize
 
 After processing all PDFs, output a summary table to the terminal:
 
-| Direct Report | Review Period | Self-Rating | Manager Rating | File Saved |
-|---|---|---|---|---|
-| Jane Doe | H2 FY26 | Meets Expectations | Exceeds Expectations | `growth-cycle-reviews/Jane_Doe/H2_FY26_growth_cycle_review.md` |
+| Direct Report | Review Period | Self-Rating | Manager Rating | Time frame | File Saved |
+|---|---|---|---|---|---|
+| Jane Doe | H2 FY26 | Meets Expectations | Exceeds Expectations | OK | `growth-cycle-reviews/Jane_Doe/H2_FY26_growth_cycle_review.md` |
 
 Flag any PDFs that could not be fully processed or where information was missing.
 
