@@ -5,6 +5,12 @@ All notable changes to the Claude OS template will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.1] - 2026-10-26
+
+### Added
+- **Sources are internal** rule (`CLAUDE.md` Context Discipline #5): no tags, Source lines, claims tables, or attribution wording in any shared doc, with a blocking grep check before Notion writes and review saves
+- `[mtg topic date]` source tag for non-1:1 meetings you attended
+
 ## [2.1.0] - 2026-10-26
 
 ### Added

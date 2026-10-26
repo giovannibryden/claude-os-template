@@ -39,7 +39,8 @@ Write a brief, not a summary. The value is analyst's judgment - what matters, wh
 Use the brief template from `team/briefs/template.md`.
 
 **Source tags (required).** End every Themes bullet, Open Action Item, and What to Watch sentence with the source it rests on. Meeting prep only puts eligible tags on an agenda:
-- `[1:1 Mar 4]` - a 1:1 or meeting you were in, with date
+- `[1:1 Mar 4]` - a 1:1 with this person, with date
+- `[mtg leads Mar 4]` - another meeting you attended, with topic and date
 - `[review H2 FY26]` - your performance review
 - `[you]` - you said or decided it directly
 - `[synth]` - from team-themes, action-items, Slack, or any other Claude-written file you may not have read

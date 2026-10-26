@@ -10,7 +10,7 @@
 
 ## Themes (last 90 days)
 
-Every bullet ends with its source: `[1:1 Mar 4]`, `[review H2 FY26]`, `[you]`, or `[synth]`. Only the first three can reach a 1:1 agenda.
+Every bullet ends with its source: `[1:1 Mar 4]`, `[mtg leads Mar 4]`, `[review H2 FY26]`, `[you]`, or `[synth]`. All but `[synth]` can reach a 1:1 agenda. Tags are internal and never appear in the agenda itself.
 
 - [Pattern from synthesizing 1:1s - not events. Each bullet is 1-2 sentences of distilled judgment.] [1:1 Mar 4]
 - [Another pattern] [review H2 FY26]

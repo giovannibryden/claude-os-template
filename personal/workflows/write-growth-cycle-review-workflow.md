@@ -66,7 +66,7 @@ Give each: their input row, the review questions, the Step 2 output, the current
 
 ### Voice
 
-Per the style guide. Keep it generic: no customer, prospect, or partner names. Describe the behavior and the pattern.
+Per the style guide. Keep it generic: no customer, prospect, or partner names. Describe the behavior and the pattern. Never reveal sources: no tags, no file names, and no "in a meeting with X" or "others have raised". Every observation reads as your own. The claims table is for you only and never goes in the review file or your review tool.
 
 ---
 
@@ -74,5 +74,6 @@ Per the style guide. Keep it generic: no customer, prospect, or partner names. D
 
 1. Save the draft with its claims table to a scratch file and run `bin/gc-sources.py [First_Last] "[Cycle]" --check [file]`. If it fails, send the draft back with the failing paths or cut those claims.
 2. Show the draft and claims table. Every Inferred row needs your confirmation or gets cut.
-3. On approval, save with frontmatter `Direct Report`, `Review Period`, `Manager Rating`, and `Written: [today]`. The `Written` date opens next cycle's window.
-4. When everyone is done, move inbox files to `inbox/.processed/`.
+3. Before saving, write the review text alone (no claims table) to a scratch file and run `grep -nE '\[(1:1|mtg|review|you|synth)[ \]]|Source:|\.md' <file>`. Any hit blocks the save.
+4. On approval, save with frontmatter `Direct Report`, `Review Period`, `Manager Rating`, and `Written: [today]`. The `Written` date opens next cycle's window.
+5. When everyone is done, move inbox files to `inbox/.processed/`.

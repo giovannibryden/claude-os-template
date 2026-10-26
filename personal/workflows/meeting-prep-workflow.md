@@ -16,7 +16,7 @@ The agenda is what you say to this person, so it may only contain what you have 
 
 **Agenda-eligible (you were in it or decided it):**
 - This person's last 3 1:1 notes (Notion or `team/1-1s/`)
-- Brief bullets tagged `[1:1 ...]`, `[review ...]`, or `[you]` in `team/briefs/[name].md`
+- Brief bullets tagged `[1:1 ...]`, `[mtg ...]`, `[review ...]`, or `[you]` in `team/briefs/[name].md`
 - Decisions you made: `strategy/decision-log.md` and Decision Gate answers from weekly prep
 - `team/milestones.md` entries whose `1:1 prompt` applies to this person
 - Anything you say in this conversation
@@ -70,7 +70,7 @@ Up to **5 topics**, development first, pipeline last. Structured 1:1s drift towa
 - Conversation starters, not directives
 - Decisions you already made are stated as positions, not reopened as questions
 - Sensitive topics framed as check-ins ("How are you feeling about X?")
-- Never in the agenda: scores, ratings, manager assessments, or confidential information about other people or deals
+- Never in the agenda: source tags, `Source:` lines, or anything that reveals where a topic came from or who raised it. Topics read as your own questions. Never in the agenda either: scores, ratings, manager assessments, or confidential information about other people or deals
 
 **Internal summary (you only, never shared):**
 - Per topic: `Source:` line, context behind it, what to probe
@@ -84,6 +84,8 @@ Up to **5 topics**, development first, pipeline last. Structured 1:1s drift towa
 ## Step 4: Create Meeting Note
 
 Create the note (Notion child page under this person's 1:1 page, or `team/1-1s/[name]-[date].md`) with the approved agenda, space for their topics, and an action items section. If the person already added topics, put yours above and never overwrite theirs.
+
+**Source leak check (blocking):** write the note content to a scratch file and run `grep -nE '\[(1:1|mtg|review|you|synth)[ \]]|Source:' <file>`. Any hit means stop and strip it. Also reread each topic for attribution wording.
 
 ---
 

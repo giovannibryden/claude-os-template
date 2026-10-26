@@ -97,13 +97,14 @@ See `personal/workflows-index.md` for the full dependency chain.
 
 ## Context Discipline
 
-Most quality problems in a system like this come from context, not the model: Claude writes a summary, a later run treats the summary as fact, and errors compound. Or a Slack thread you never read shows up in a 1:1 agenda. Five rules keep that out:
+Most quality problems in a system like this come from context, not the model: Claude writes a summary, a later run treats the summary as fact, and errors compound. Or a Slack thread you never read shows up in a 1:1 agenda. Six rules keep that out:
 
 1. **Know where every claim came from.** Briefs and other synthesized files tag each bullet with its source (`[1:1 Mar 4]`, `[review H2 FY26]`, `[you]`, `[synth]`). Anything said *to* someone on your behalf (agendas, reviews, handoffs) uses only sources you were in or decided.
 2. **Synthesized files are pointers, never evidence.** Briefs, themes, roll-ups, and summaries help find the primary source. Cite the primary source. If they disagree, the primary source wins and the synthesized file gets corrected.
 3. **Enforce in code where you can.** Date windows, file allowlists, and citation checks belong in a script (see `bin/gc-sources.py`), not in a longer prompt. When a workflow collects ALWAYS/NEVER rules after incidents, that's the signal to move the check into code.
 4. **One clean context per person.** Batch workflows (weekly prep, briefs, reviews) run one subagent per person, so one person's material can't bleed into another's and stale session context can't leak in.
-5. **Forget on purpose.** When a correction becomes a workflow rule or a script, delete the memory or incident note that prompted it. Accumulated fixes start to conflict. Prune quarterly.
+5. **Sources are internal, always.** Tags, `Source:` lines, and claims tables are for you only. Never put them, or wording that reveals where something came from ("Sam mentioned", "came up in leads", "I've heard"), in Notion, agendas, reviews, Slack, email, or any doc someone else can see. Nobody should learn that feedback about them was discussed elsewhere. Feedback reads as your own observation. Before any external write, run `grep -nE '\[(1:1|mtg|review|you|synth)[ \]]|Source:' <file>` on the content; any hit blocks the write.
+6. **Forget on purpose.** When a correction becomes a workflow rule or a script, delete the memory or incident note that prompted it. Accumulated fixes start to conflict. Prune quarterly.
 
 ## How Claude Uses This System
 
