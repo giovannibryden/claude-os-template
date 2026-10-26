@@ -59,6 +59,8 @@ Performance review archive. When you provide performance review PDFs, Claude wil
 
 To use: drop review PDFs into `inbox/` and say "process inbox and prep growth cycle reviews."
 
+To write new reviews, drop your input sheet and review template into `inbox/` and say "write growth cycle reviews." The workflow (`personal/workflows/write-growth-cycle-review-workflow.md`) uses `bin/gc-sources.py` to restrict evidence to the current cycle's primary sources.
+
 ### `/personal`
 Your own development as a leader.
 
@@ -93,6 +95,16 @@ The **person brief** (`team/briefs/[name].md`) is the central node. It synthesiz
 
 See `personal/workflows-index.md` for the full dependency chain.
 
+## Context Discipline
+
+Most quality problems in a system like this come from context, not the model: Claude writes a summary, a later run treats the summary as fact, and errors compound. Or a Slack thread you never read shows up in a 1:1 agenda. Five rules keep that out:
+
+1. **Know where every claim came from.** Briefs and other synthesized files tag each bullet with its source (`[1:1 Mar 4]`, `[review H2 FY26]`, `[you]`, `[synth]`). Anything said *to* someone on your behalf (agendas, reviews, handoffs) uses only sources you were in or decided.
+2. **Synthesized files are pointers, never evidence.** Briefs, themes, roll-ups, and summaries help find the primary source. Cite the primary source. If they disagree, the primary source wins and the synthesized file gets corrected.
+3. **Enforce in code where you can.** Date windows, file allowlists, and citation checks belong in a script (see `bin/gc-sources.py`), not in a longer prompt. When a workflow collects ALWAYS/NEVER rules after incidents, that's the signal to move the check into code.
+4. **One clean context per person.** Batch workflows (weekly prep, briefs, reviews) run one subagent per person, so one person's material can't bleed into another's and stale session context can't leak in.
+5. **Forget on purpose.** When a correction becomes a workflow rule or a script, delete the memory or incident note that prompted it. Accumulated fixes start to conflict. Prune quarterly.
+
 ## How Claude Uses This System
 
 When you give Claude information, it will:
@@ -103,7 +115,7 @@ When you give Claude information, it will:
 
 When you ask Claude for help, it will:
 1. Pull context from relevant files automatically
-2. Synthesize across multiple sources
+2. Synthesize across multiple sources, keeping track of which are primary
 3. Give you direct recommendations, not summaries
 4. Update documents based on the conversation
 

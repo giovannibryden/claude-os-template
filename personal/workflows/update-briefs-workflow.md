@@ -26,7 +26,7 @@ For each person, read in order:
 2. **team/briefs/[name].md** - current brief (if exists), to diff against
 3. **team/1-1s/[name]-*.md** - last 4 notes, sorted newest first
 4. **team/performance/** - last 3 coaching or performance records
-5. **growth-cycle-reviews/** - most recent review
+5. **growth-cycle-reviews/** - most recent review, only for your named development areas, expectations, and rating. Wins in a review belong to that cycle: never carry them forward as recent
 6. **team/team-themes.md** - entries mentioning this person
 7. **meetings/action-items.md** - items where this person is the named owner
 
@@ -37,6 +37,14 @@ For each person, read in order:
 Write a brief, not a summary. The value is analyst's judgment - what matters, what to watch, what's changed. Not a factual recap of what happened.
 
 Use the brief template from `team/briefs/template.md`.
+
+**Source tags (required).** End every Themes bullet, Open Action Item, and What to Watch sentence with the source it rests on. Meeting prep only puts eligible tags on an agenda:
+- `[1:1 Mar 4]` - a 1:1 or meeting you were in, with date
+- `[review H2 FY26]` - your performance review
+- `[you]` - you said or decided it directly
+- `[synth]` - from team-themes, action-items, Slack, or any other Claude-written file you may not have read
+
+A judgment drawn from several sources takes the tag of its weakest one. Never read Slack directly for a brief.
 
 **"What to Watch" is the payoff** - this section requires holding multiple sources in mind and is what meeting prep can't easily derive without the brief. Be direct. Don't hedge.
 
@@ -57,3 +65,4 @@ After saving all briefs, report: "[N] briefs updated: [list of names]."
 3. **What to Watch is the payoff** - this requires synthesis across sources
 4. **Overwrite, don't append** - briefs are refreshed state
 5. **Run after every process-week** - keeps meeting prep fast (2 minutes instead of 10)
+6. **Tag every claim** - an untagged bullet is treated as `[synth]` and can't reach an agenda

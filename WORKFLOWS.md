@@ -95,7 +95,8 @@ Claude:
 - Loads their person brief (primary context source)
 - Checks last 3 meeting notes for anything since the brief was updated
 - Checks milestones.md for relevant team-wide deadlines
-- Suggests top 5 agenda topics (development first, pipeline last)
+- Suggests top 5 agenda topics (development first, pipeline last), each tied to a source you were in
+- Keeps Slack, email, and Claude-written summaries out of the agenda (they inform the internal summary only)
 - Produces an internal-only summary with sensitive context
 - Creates the meeting note (Notion or local) after you approve
 ```
@@ -295,6 +296,24 @@ Convert performance review PDFs into structured, searchable markdown.
 
 ### Pro tip
 The detailed workflow definition lives in `personal/workflows/growth-cycle-review-prep-workflow.md`. You can customize the output format, metadata fields, and directory structure there.
+
+## The "Write Growth Cycle Review" Workflow
+
+Draft reviews from this cycle's evidence only.
+
+### How it works
+1. Drop your input sheet (ratings, strengths, growth areas) and review template into `inbox/`
+2. Tell Claude: "write growth cycle reviews"
+3. Claude will:
+   - Run `bin/gc-sources.py` per person to list the only files a review may cite (in-window 1:1s and coaching records)
+   - Have one subagent pull your prior expectations from past reviews, with no examples carried over
+   - Have one subagent per person write the draft plus a claims table
+   - Fail any draft that cites a file outside the window, before you see it
+
+### Key design choice: the writer never sees stale evidence
+Prior self-reviews and Claude-written roll-ups are where reviews go wrong: old wins get re-credited and loose notes become hard facts. Instead of telling the writer to ignore them, the workflow never gives them to it.
+
+Detailed workflow: `personal/workflows/write-growth-cycle-review-workflow.md`
 
 ## Integration Workflows
 

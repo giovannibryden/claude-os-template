@@ -10,9 +10,11 @@
 
 ## Themes (last 90 days)
 
-- [Pattern from synthesizing 1:1s - not events. Each bullet is 1-2 sentences of distilled judgment.]
-- [Another pattern]
-- [Another pattern]
+Every bullet ends with its source: `[1:1 Mar 4]`, `[review H2 FY26]`, `[you]`, or `[synth]`. Only the first three can reach a 1:1 agenda.
+
+- [Pattern from synthesizing 1:1s - not events. Each bullet is 1-2 sentences of distilled judgment.] [1:1 Mar 4]
+- [Another pattern] [review H2 FY26]
+- [Another pattern] [synth]
 
 ## Development Areas
 
@@ -22,7 +24,7 @@
 
 [Items from action-items.md where this person is the named owner. Only unchecked items.]
 
-- [ ] [item] - [due date or 'ongoing']
+- [ ] [item] - [due date or 'ongoing'] [1:1 Mar 4]
 
 If none, write "None outstanding as of [date]."
 

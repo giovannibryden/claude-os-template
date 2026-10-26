@@ -5,6 +5,18 @@ All notable changes to the Claude OS template will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-10-26
+
+### Added
+- **Context Discipline** section in `CLAUDE.md`: source provenance, synthesized files as pointers, code over prompt rules, per-person isolation, deliberate forgetting
+- **Write growth cycle review workflow** (`personal/workflows/write-growth-cycle-review-workflow.md`) with isolated prior-view and writer subagents
+- **`bin/gc-sources.py`**: lists the only in-window files a review may cite (window set by Review Period label) and `--check` fails drafts citing anything else
+
+### Changed
+- **Meeting prep**: Source Contract - agenda topics need a source you were in; Slack, email, and synthesized files go to the internal summary only, with a "You may not have seen" section
+- **Weekly prep**: one clean-context subagent per person; decision gate ignores Slack-only or `[synth]` decisions; directs always prepped even without a booked slot
+- **Update briefs** and **brief template**: every bullet carries a source tag (`[1:1 date]`, `[review cycle]`, `[you]`, `[synth]`); prior reviews used for expectations only, never as recent wins
+
 ## [2.0.0] - 2026-09-24
 
 ### Added

@@ -12,6 +12,7 @@ Maps workflow triggers to files, what each reads and writes, and how they chain 
 | Weekly Prep | "prep for next week", "weekly prep" | `personal/workflows/weekly-prep-workflow.md` |
 | Meeting Prep | "prep for my 1:1 with [name]" | `personal/workflows/meeting-prep-workflow.md` |
 | Update Briefs | "update briefs", "update [name]'s brief" | `personal/workflows/update-briefs-workflow.md` |
+| Write Growth Cycle Review | "write growth cycle reviews", "draft manager reviews" | `personal/workflows/write-growth-cycle-review-workflow.md` |
 
 ---
 
@@ -25,7 +26,7 @@ Process Week
 
 Weekly Prep
   ├── Reads: Calendar (next week), team/team-structure.md
-  └── Calls: Meeting Prep for each person
+  └── Calls: Meeting Prep for each person (one subagent each)
 
 Meeting Prep
   ├── Reads: team/briefs/[name].md (primary context)
@@ -36,7 +37,12 @@ Meeting Prep
 Update Briefs
   ├── Reads: team/1-1s/, team/performance/, growth-cycle-reviews/
   ├── Reads: team-themes.md, action-items.md
-  └── Writes: team/briefs/[name].md
+  └── Writes: team/briefs/[name].md (every bullet source-tagged)
+
+Write Growth Cycle Review
+  ├── Runs: bin/gc-sources.py (evidence allowlist + --check)
+  ├── Reads: only the listed in-window files, current self-review, style guide
+  └── Writes: growth-cycle-reviews/[First_Last]/[Cycle]_growth_cycle_review.md
 ```
 
 ---
@@ -46,10 +52,10 @@ Update Briefs
 | File | Read by |
 |------|---------|
 | `team/team-structure.md` | meeting-prep, process-week, update-briefs |
-| `team/briefs/[name].md` | meeting-prep (primary source), update-briefs (to diff) |
-| `meetings/action-items.md` | meeting-prep (open items), process-week |
+| `team/briefs/[name].md` | meeting-prep (primary source; only `[1:1]`/`[review]`/`[you]`-tagged bullets reach agendas), update-briefs (to diff) |
+| `meetings/action-items.md` | meeting-prep (internal summary only), process-week |
 | `team/milestones.md` | meeting-prep (milestone prompts), process-week |
-| `team/team-themes.md` | meeting-prep (theme context), process-week |
+| `team/team-themes.md` | meeting-prep (internal summary only), process-week |
 | `personal/priorities.md` | strategic review, weekly-prep |
 | `strategy/decision-log.md` | weekly-prep (quarterly retrospective) |
 

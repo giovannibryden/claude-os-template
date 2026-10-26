@@ -4,6 +4,8 @@ claude-os/
 │   ├── google-calendar-mcp-setup.md
 │   ├── notion-mcp-setup.md
 │   └── slack-mcp-setup.md
+├── bin/
+│   └── gc-sources.py
 ├── CHANGELOG.md
 ├── CLAUDE.md
 ├── CONTRIBUTING.md
@@ -45,7 +47,8 @@ claude-os/
 │   │   ├── meeting-prep-workflow.md
 │   │   ├── process-week-workflow.md
 │   │   ├── update-briefs-workflow.md
-│   │   └── weekly-prep-workflow.md
+│   │   ├── weekly-prep-workflow.md
+│   │   └── write-growth-cycle-review-workflow.md
 │   ├── workflows-index.md
 │   ├── priorities.md (created by SETUP.sh)
 │   └── reflection.md (user creates)
